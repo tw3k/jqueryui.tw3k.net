@@ -1,0 +1,41 @@
+php_value arg_separator.output &amp;
+
+    php_value zlib.output_compression on
+    php_value zlib.output_compression 2048
+    php_value zlib.output_compression_level 6
+
+ExpiresActive On
+  <FilesMatch "\.(ico|gif|jpe?g|png|)$">
+          ExpiresDefault "access plus 1 year"
+          Header unset ETag
+          Header unset Vary
+          FileETag None
+          Header set Cache-Control "public, max-age=31636000"
+  </FilesMatch>
+  <FilesMatch "\.(js|css)$">
+          ExpiresDefault "access plus 1 year"
+          Header unset ETag
+          Header unset Vary
+          FileETag None
+          Header set Vary "Accept-Encoding"
+  </FilesMatch>
+
+<Files ~ "\.(php|xhtm|html|css|js)$">
+    AddDefaultCharset UTF-8
+    DefaultLanguage en-US
+</Files>
+
+Options Indexes FollowSymLinks 
+<IfModule rewrite_module>
+    RewriteEngine Off
+    RewriteBase /
+
+
+
+</IfModule>
+
+ErrorDocument 400 /index.php?context=error&error=400
+ErrorDocument 401 /index.php?context=error&error=401
+ErrorDocument 403 /index.php?context=error&error=403
+ErrorDocument 404 /index.php?context=error&error=404
+ErrorDocument 410 /index.php?context=error&error=410

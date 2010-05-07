@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://jqueryui.tw3k.net/</loc>
+      <lastmod>2010-04-26</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>http://jqueryui.tw3k.net/index-1.7.2.html</loc>
+      <lastmod>2010-04-26</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.1</priority>
+   </url>
+   <url>
+      <loc>http://jqueryui.tw3k.net/development-bundle/demos</loc>
+      <lastmod>2010-04-26</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.1</priority>
+   </url>
+</urlset>
