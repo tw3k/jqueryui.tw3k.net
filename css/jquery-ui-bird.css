@@ -20,7 +20,7 @@
     body {
         background:#fff url(custom-theme/images/ui-tw3k-bird.png) 50% 50% no-repeat fixed;
         text-align: center;
-        padding: 0px 0px;
+        padding: 0px 1em;
         margin: 60px 20px 20px 20px;
         border:1px solid #999;
         min-height: 80%;
